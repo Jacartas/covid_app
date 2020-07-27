@@ -20,7 +20,7 @@ class _HomeState extends State<Home> {
       case 1:
         return Cases();
       case 2:
-        return About();
+        return News();
       default:
         return Cases();
     }
@@ -38,7 +38,7 @@ class _HomeState extends State<Home> {
         },
         items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.check_circle),
+            icon: Icon(Icons.warning),
             title: Text('Symptoms'),
             backgroundColor: Colors.blue,
           ),
@@ -48,8 +48,8 @@ class _HomeState extends State<Home> {
             backgroundColor: Colors.blue,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.find_in_page),
-            title: Text('About'),
+            icon: Icon(Icons.subject),
+            title: Text('News'),
             backgroundColor: Colors.blue,
           ),
         ],
