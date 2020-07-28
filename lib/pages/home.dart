@@ -2,7 +2,7 @@ import 'package:covid_app/pages/Cases.dart';
 import 'package:covid_app/pages/symptoms.dart';
 import 'package:flutter/material.dart';
 
-import 'about_covid.dart';
+import 'news.dart';
 
 class Home extends StatefulWidget {
   @override
