@@ -5,7 +5,10 @@ class Symptoms extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Container(
-        child: Text('symptoms'),
+        child: Padding(
+          padding: const EdgeInsets.all(50.0),
+          child: Text('symptoms'),
+        ),
       ),
     );
   }
