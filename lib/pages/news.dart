@@ -10,15 +10,13 @@ class News extends StatefulWidget {
 
 class _NewsState extends State<News> {
 
-  Future future;
-
   List<Articles> news;
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    future = setupNews();
+    setupNews();
   }
 
   Future<void> setupNews() async{
@@ -34,7 +32,7 @@ class _NewsState extends State<News> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: FutureBuilder(
-        future: future,
+        future: setupNews(),
         builder: (context, snapshot){
           if (news!=null){
             return ListView.builder(
